@@ -40,5 +40,7 @@ Inspired by: Airline Manager 2025 and Altitude Management
 ** This website is for educational and growth purposes **
 
 Current Version: 1.1
+
 Created: June 24th, 2025
+
 Last Updated: July 28th, 2025
