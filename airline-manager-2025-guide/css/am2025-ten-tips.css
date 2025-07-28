@@ -1,0 +1,220 @@
+/*
+    Creator: Sebastian Jaculbe
+    Inspired By: Airline Manager 2025 and Altitude Management
+    Created: July 15th, 2025
+    Updated: July 28th, 2025
+    Version 1.1
+*/
+
+html, body {
+    /* This allows the content to use the entire screen available */
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+}
+
+header {
+    background-size: cover;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: rgba(255, 255, 255, 0.573);
+    border-radius: 30px;
+    height: 0; /* No nav background */
+    line-height: 3;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nav {
+    display: flex;
+    list-style: none; /* Controls the appearance of lists: bullet points, numbers, etc. */
+     /* Type of container */
+    gap: 0px; /* Space elements out even in a Flex or Grid container */
+    flex: 1;
+    padding-top: 25px;
+}
+
+.nav li{
+    position: relative;
+}
+
+.nav > li > a {
+    text-decoration: none; /* No underlines on links */
+    color: black;
+    font-size: 25px;
+    font-weight: 300; /* Controls the boldness and lightness of texts */
+    padding: 150px; /* Controls the separation between each navigation link */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    transition: color 0.2s, border-top 0.2s, border-bottom 0.2s;
+}
+
+.nav > li > a:hover{
+    color: rgb(37, 113, 228);
+    border-top: 1px solid rgb(37, 113, 228);
+    border-bottom: 1px solid rgb(37, 113, 228);
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: inline-block;
+    position: relative;
+    justify-content: center;
+}
+
+/* Dropdown Button */
+.dropdown-button {
+    background-color: rgb(37, 113, 228); 
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: 0.01in;
+    border-radius: 15px;
+    border-style: solid;
+    height: 70px;
+    width: 250px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    border-color: white;
+    border-width: 0.3in;
+    border-style: solid;
+    border-radius: 30px;
+    background-color: white;
+    min-width: 160px;
+    z-index: 1;
+    box-shadow: 4px 8px 8px rgba(0,0,0,0.3);
+}
+
+/* Dropdown Content Items */
+.dropdown-content a {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.982);
+    padding: 18px 25px;
+    text-decoration: none;
+    display:flex;
+    flex-direction: column;
+    font-family: inherit;
+    margin: 0;
+}
+
+/* Dropdown Content Items when Hovering */
+.dropdown-content a:hover {
+    color: rgb(37, 113, 228);
+    overflow: hidden;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown-menu:hover .dropdown-content {
+    background-color: white;
+    display: block;
+}
+
+
+/* Header Two */
+h2 {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+/* Header Three */
+h3 {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    margin: auto;
+}
+
+body {
+    overflow-x: hidden; /* Prevents the user from scrolling horizontally */
+    background-image: url("../images/background-cover.jpeg");
+    background-repeat: no-repeat; /* Disables */
+    background-attachment: fixed;
+    background-size: cover;
+    flex-direction: column;
+    font-family:'Times New Roman', Times, serif;
+}
+
+/* <div> Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto; /* Centers horizontally */
+    padding: 20px;
+}
+
+/* Section */
+section {
+    flex: 0 1 450px; /* flex-grow, flex-shrink, flex-basis */
+}
+
+section.menu, section.video {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Article */
+.summary {
+    background-color: rgba(255, 255, 255, 0.982);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 4px 8px 8px rgba(0,0,0,0.3);
+}
+
+/* Video */
+iframe {
+    border-width: 10px;
+    border-radius: 20px;
+    border-color: grey;
+    border-style: solid;
+}
+
+/* Images */
+.img {
+    border-radius: 15px;
+    box-shadow: 4px 8px 8px rgba(0,0,0,0.3);
+}
+
+/* Main Content */
+main {
+    gap: 80px; /* Space between images */
+}
+
+p {
+    color: black;
+    border-width: 2px;
+    gap: 3px;
+}
+
+/* Closing Note */
+.ending {
+    text-align: center;
+    font-size: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    box-sizing: border-box;
+    background-color: white;
+    width: 100%;
+    border-radius: 0px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+#footer-link{
+    color: rgb(37, 113, 228);
+}
+
+#footer-link:hover {
+    color: rgb(37, 113, 228, 0.8);
+}

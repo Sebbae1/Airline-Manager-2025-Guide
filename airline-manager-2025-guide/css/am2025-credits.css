@@ -1,0 +1,169 @@
+/* 
+    Creator: Sebastian Jaculbe
+    Inspired By: Airline Manager 2025 and Altitude Management
+    Created: July 14th, 2025
+    Updated: July 28th, 2025
+    Version 1.1
+*/
+
+html, body {
+    /* This allows the content to use the entire screen available */
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+}
+
+header {
+    background-size: cover;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: rgba(255, 255, 255, 0.573);
+    border-radius: 30px;
+    height: 0; /* No nav background */
+    line-height: 3;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nav {
+    display: flex;
+    list-style: none; /* Controls the appearance of lists: bullet points, numbers, etc. */
+     /* Type of container */
+    gap: 0px; /* Space elements out even in a Flex or Grid container */
+    flex: 1;
+    padding-top: 25px;
+}
+
+.nav li{
+    position: relative;
+}
+
+.nav > li > a {
+    text-decoration: none; /* No underlines on links */
+    color: black;
+    font-size: 25px;
+    font-weight: 300; /* Controls the boldness and lightness of texts */
+    padding: 150px; /* Controls the separation between each navigation link */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    transition: color 0.2s, border-top 0.2s, border-bottom 0.2s;
+}
+
+.nav > li > a:hover{
+    color: rgb(37, 113, 228);
+    border-top: 1px solid rgb(37, 113, 228);
+    border-bottom: 1px solid rgb(37, 113, 228);
+}
+
+/* Dropdown */
+.dropdown-menu {
+    overflow: auto;
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.982);
+    border-radius: 30px;
+    list-style: none;
+    z-index: 1; /* A content layer above 0 */
+    padding-right: 38%;
+    padding-left: 15%;
+    padding-top: 5%;
+    text-align: justify;
+}
+
+/* Dropdown Content */
+.dropdown-menu li a{
+    display: inline-block;
+    overflow: hidden;
+    outline: none;
+    flex-direction: column;
+    z-index: 1;
+    background-color: inherit; 
+    font-family: inherit; /* Important for mobile devices */
+    margin: 0; /* Important for mobile devices */
+}
+
+/* Dropdown Content Items when Hovering */
+.dropdown-menu li a:hover {
+    overflow: hidden;
+    color: rgb(37, 113, 228);
+}
+
+/* Dropdown being Displayed when Hovering */
+.nav li:hover .dropdown-menu {
+    display: block;
+    box-shadow: 4px 8px 8px rgba(0,0,0,0.3);
+}
+
+/* Dropdown Content List Items when NOT Hovering */
+.dropdown-list {
+    text-decoration: none;
+    color: black;
+}
+
+/* Header Two */
+h2 {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+body {
+    overflow-x: hidden; /* Prevents the user from scrolling horizontally */
+    background-image: url("../images/background-cover.jpeg");
+    background-repeat: no-repeat; /* Disables */
+    background-attachment: fixed;
+    background-size: cover;
+    flex-direction: column;
+    font-family:'Times New Roman', Times, serif;
+}
+
+/* <div> Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto; /* Centers horizontally */
+    padding: 20px;
+}
+
+/* Section */
+section {
+    flex: 0 1 450px; /* flex-grow, flex-shrink, flex-basis */
+    text-align: center;
+    background-color: rgba(223, 227, 234, 0.9);
+    border-radius: 15px;
+    line-height: 2.5;
+    padding: 2.5%;
+}
+
+/* Main Content */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px; /* Space between images */
+}
+
+p {
+    color: black;
+    border-width: 2px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    box-sizing: border-box;
+    background-color: white;
+    width: 100%;
+    border-radius: 0px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+#footer-link{
+    color: rgb(37, 113, 228);
+}
+
+#footer-link:hover {
+    color: rgb(37, 113, 228, 0.8);
+}
