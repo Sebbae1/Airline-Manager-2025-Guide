@@ -32,9 +32,13 @@ The project emphasized the follow concepts from HTML and CSS:
 
 Creator: Sebastian Jaculbe
 Inspired by: Airline Manager 2025 and Altitude Management
+
 ** All rights, image, and likeness belong to Airline Manager 2025 and Altitude Management **
+
 ** This website is ABSOLUTELY NOT for monetary gain **
+
 ** This website is for educational and growth purposes **
+
 Current Version: 1.1
 Created: June 24th, 2025
 Last Updated: July 28th, 2025
